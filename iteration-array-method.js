@@ -82,12 +82,12 @@ let person = [
 ];
 //for loop
 for (let i = 0; i < person.length; i++) {
-    //console.log(person[i]);
+    console.log(person[i]);
 }
 //while loop
 let i = 0;
 while (i < person.length) {
-    //console.log(person[i]);
+    console.log(person[i]);
     i++;
 }
 //for in
@@ -98,11 +98,12 @@ for (let i in person) {
 person.forEach(function (value, index) {
     console.log(`${index}: ${value.name} \n${value.gender} \n${value.email}`);
 })
-let forIn = person.forEach
 //filter
 let filterAge = person.filter(function (data) { return data.age <= 30 });
+console.log(filterAge);
 //map
 let ageMapped = person.map(function (data) { return data.age });
+console.log(ageMapped);
 //reduce
 let sumAge = person.reduce(function (acc, data) { return acc + data.age }, 0);
-//console.log(testFilter);
+console.log(sumAge);
